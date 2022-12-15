@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+
+
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.label__check{
+    visibility: hidden;
+}
+
+.nav__container{
+    background-color: #5B359D;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.nav__link{
+    display: flex;
+}
+
+.linktitle{
+    font-style: italic;
+    color: white;
+    padding: 5px;
+
+}
+
+.nav__label{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav__label input{
+    position: absolute;
+}
+
+.nav__links{
+    padding: 15px;
+}
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/img/noz-portail-149\ 1.png");
+    background-size: cover;
+    background-position: center;
+
+}
+.header__link{
+    display: flex;
+    justify-content: center;
+    background-color: #5B359D;
+    margin: 15px;
+}
+
+.header__container h3{
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    color: white;
+}
+
+
+.main__paragraphe{
+    font-size: 28px;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.section__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section__citation{
+    width: 100%;
+}
+
+.citation__text{
+    font-size: 26px;
+}
+
+.citation__author{
+    font-size: 20px;
+}
+
+.footer{
+    background-color: #5B359D;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: 700;
+    font-size: 19px;
+
+}
+
+.footer__text{
+    text-align: center;
+
+    font-size: 15px;
+}
+
+.list__socials{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.footer__infos{
+    padding-left: 40px;
+}
+
+.footer__infos h4{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+.footer__infos--adress p{
+    
+    padding-left: 40px;
+}
+
+
+@media only screen and (min-width: 481px){
+    .nav{
+        display: flex;
+    }
+
+    .nav__container{
+        width: 50%;
+        padding: 0;
+    }
+
+    .linktitle{
+        font-size: 20px
+    }
+
+    .nav__label{
+        display: none;
+    }
+
+    .nav__links{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding: 0;
+    }
+
+    .nav__link{
+        padding: 5px;
+    }
+
+    .section__container{
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 15px;
+
+    }
+
+    .section{
+        width: 50%;
+    }
+
+    .section__citation{
+        width: auto;
+        padding: 50px;
+    }
+
+    .footer__infos{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 769px){
+
+    .nav{
+        justify-content: space-between;
+    }
+
+    .nav__container{
+        width: auto;
+    }
+
+    .nav__links{
+        width: auto;
+    }
+
+    .section__container{
+        flex-wrap: nowrap;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .section{
+        padding: 25px;
+    }
+
+}
